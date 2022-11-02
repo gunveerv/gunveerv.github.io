@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.a4e8256f.js",
-    "static/js/787.ddfc475e.chunk.js": "/static/js/787.ddfc475e.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.a4e8256f.js.map": "/static/js/main.a4e8256f.js.map",
-    "787.ddfc475e.chunk.js.map": "/static/js/787.ddfc475e.chunk.js.map"
+    "main.css": "/gunveerv.github.io/static/css/main.073c9b0a.css",
+    "main.js": "/gunveerv.github.io/static/js/main.00714e6d.js",
+    "static/js/787.ddfc475e.chunk.js": "/gunveerv.github.io/static/js/787.ddfc475e.chunk.js",
+    "static/media/logo.svg": "/gunveerv.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/gunveerv.github.io/index.html",
+    "main.073c9b0a.css.map": "/gunveerv.github.io/static/css/main.073c9b0a.css.map",
+    "main.00714e6d.js.map": "/gunveerv.github.io/static/js/main.00714e6d.js.map",
+    "787.ddfc475e.chunk.js.map": "/gunveerv.github.io/static/js/787.ddfc475e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.a4e8256f.js"
+    "static/js/main.00714e6d.js"
   ]
 }
