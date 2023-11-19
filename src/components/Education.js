@@ -3,12 +3,10 @@ import '../App.css';
 
 function Education() {
   return (
-    <div className="left-space space-top">
+    <div className="space-top outline">
       <Typography variant="h4" align="left">Education</Typography>
-
-      <Grid>
-        <Typography variant="h5" align="left">Western University</Typography>
-      </Grid>
+      <Typography variant="h6" align="left">Computer Science @ Western University '25</Typography>
+      
     </div>
   );
 }

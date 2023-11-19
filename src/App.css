@@ -28,8 +28,9 @@
   color: #61dafb;
 }
 
-.left-space {
+.page-space {
   margin-left: 5%;
+  margin-right: 5%;
 }
 
 .space-top {
@@ -38,6 +39,10 @@
 
 .bold {
   font-weight: bolder;
+}
+
+.outline {
+  color: #282c34;
 }
 
 @keyframes App-logo-spin {

@@ -5,7 +5,7 @@ function Intro() {
   return (
     <div className="left-space space-top">
       <Typography variant="h3" align="left">Gunveer Vilkhu</Typography>
-      <Typography variant="h6" align="left">Software Developer</Typography>
+      <Typography variant="h6" align="left">Software Engineer</Typography>
     </div>
   );
 }
