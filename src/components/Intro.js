@@ -3,9 +3,9 @@ import '../App.css';
 
 function Intro() {
   return (
-    <div className="left-space space-top">
-      <Typography variant="h3" align="left">Gunveer Vilkhu</Typography>
-      <Typography variant="h6" align="left">Software Engineer</Typography>
+    <div>
+      <Typography variant="h1">Gunveer Vilkhu</Typography>
+      <Typography variant="h2">Software Engineer</Typography>
     </div>
   );
 }
