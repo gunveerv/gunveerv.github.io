@@ -8,7 +8,14 @@ body, html {
 .App {
   text-align: center;
   height: 100vh;
+}
+
+.light {
   background-color: #f7f7f7;
+}
+
+.dark {
+  background-color: #18191a;
 }
 
 .App-header {
@@ -72,9 +79,19 @@ body, html {
   margin-top: 25px;
 }
 
+.margin-toggle {
+  margin-top: 15px;
+  margin-left: 55px;
+}
+
 .text-align {
   text-align: left;
   justify-content: center;
   align-items: left;
+}
+
+.center-box {
+  justify-content: center;
+  align-items: center;
 }
 
