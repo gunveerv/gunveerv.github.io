@@ -59,7 +59,7 @@ function Intro({ handleSetToggle, toggle }) {
   return (
     <div>
       <Typography variant="h1">Gunveer Vilkhu</Typography>
-      <Typography variant="h2">Software Engineer</Typography>
+      <Typography variant="h2" className="Subtitle">Software Engineer</Typography>
       <Box className="margin-top">
         <Link rel="noopener" target="_blank" href="https://github.com/gunveerv">
           <Grid

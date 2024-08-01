@@ -1,36 +1,37 @@
 body, html {
   margin: 0;
   padding: 0;
-  height: 100%;
-  width: 100%;
+  background-color: var(--background-color);
 }
 
 .App {
   text-align: center;
   height: 100vh;
+  width: 100vw;
+  background-color: var(--background-color);
 }
 
 .light {
-  background-color: #f7f7f7;
+  --background-color: #f7f7f7;
+  --text-primary: #141414;
+  --text-secondary: #141414;
+  transition: background-color 0.25s linear, color 0.25s linear;
 }
 
 .dark {
-  background-color: #18191a;
+  --background-color: #18191a;
+  --text-primary: #F5F5F5;
+  --text-secondary: #F5F5F5;
+  --text-tertiary: #61dafb;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.light img {
+  filter: none;
 }
 
-.App-link {
-  color: #61dafb;
+.dark img {
+  filter: invert(100%) sepia(27%) saturate(277%) hue-rotate(224deg) brightness(114%) contrast(92%);
 }
 
 .page-space {
@@ -42,25 +43,45 @@ body, html {
 .padding-space {
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 5%;
+}
+
+.padding-top {
+  padding-top: 50px;
+}
+
+.bold {
+  font-weight: bold !important;
 }
 
 .MuiTypography-h1 {
   font-size: 40px !important;
   font-weight: bold !important;
   text-align: left;
+  color: var(--text-primary);
 }
 
 .MuiTypography-h2 {
   font-size: 25px !important;
-  opacity: 65%;
   text-align: left;
+  padding-top: 5px;
+  color: var(--text-secondary);
 }
 
 .MuiTypography-h3 {
   font-size: 22px !important;
   text-align: left;
-  padding-left: px;
+  color: var(--text-tertiary);
+}
+
+.MuiTypography-h4 {
+  font-size: 20px !important;
+  text-align: left;
+  padding-top: 5px;
+  color: var(--text-secondary);
+}
+
+.Subtitle {
+  opacity: 65%;
 }
 
 .logo {
