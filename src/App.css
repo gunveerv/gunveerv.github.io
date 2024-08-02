@@ -6,10 +6,21 @@ body, html {
 
 .App {
   text-align: center;
-  height: 100vh;
+  height: var(--vh);
   width: 100vw;
   background-color: var(--background-color);
 }
+
+.mobile {
+  --vh: 100%;
+  --padding-top: 50px;
+}
+
+.desktop {
+  --vh: 100vh;
+  --padding-top: 120px;
+}
+
 
 .light {
   --background-color: #f7f7f7;
@@ -34,19 +45,13 @@ body, html {
   filter: invert(100%) sepia(27%) saturate(277%) hue-rotate(224deg) brightness(114%) contrast(92%);
 }
 
-.page-space {
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 5%;
-}
-
 .padding-space {
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 75px;
+  padding-right: 50px;
 }
 
 .padding-top {
-  padding-top: 50px;
+  padding-top: var(--padding-top);
 }
 
 .bold {
@@ -63,22 +68,30 @@ body, html {
 .MuiTypography-h2 {
   font-size: 25px !important;
   text-align: left;
-  padding-top: 5px;
+  padding-top: 12px;
   color: var(--text-secondary);
 }
 
 .MuiTypography-h3 {
-  font-size: 22px !important;
+  font-size: 20px !important;
   text-align: left;
   color: var(--text-tertiary);
 }
 
 .MuiTypography-h4 {
-  font-size: 20px !important;
+  font-size: 18px !important;
   text-align: left;
   padding-top: 5px;
   color: var(--text-secondary);
 }
+
+.MuiTypography-h5 {
+  font-size: 13px !important;
+  text-align: left;
+  padding-top: 5px;
+  color: var(--text-secondary);
+}
+
 
 .Subtitle {
   opacity: 65%;

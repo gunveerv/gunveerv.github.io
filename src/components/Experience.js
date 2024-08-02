@@ -16,13 +16,11 @@ function Experience() {
       >
         <Grid item xs={0}>
           <Typography variant="h2">Software Engineer Intern @ Mobials</Typography>
-          <Typography variant="h4">London, ON</Typography>
           <Typography variant="h4">May '23 - Aug '24</Typography>
         </Grid>
 
         <Grid item xs={0}>
           <Typography variant="h2">Software Engineer Intern @ Surf</Typography>
-          <Typography variant="h4">Toronto, ON</Typography>
           <Typography variant="h4">Jan '22 - Aug '22</Typography>
         </Grid>
       </Grid>
