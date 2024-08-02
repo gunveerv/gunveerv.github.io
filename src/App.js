@@ -8,20 +8,6 @@ import Experience from './components/Experience';
 import Awards from './components/Awards';
 import Projects from './components/Projects';
 
-// eslint-disable-next-line
-function debounce(fn, ms) {
-  let timer;
-  return () => {
-    clearTimeout(timer);
-    // eslint-disable-next-line
-    timer = setTimeout((_) => {
-      timer = null;
-      // eslint-disable-next-line
-      fn.apply(this, arguments);
-    }, ms);
-  };
-}
-
 function App() {
   const [dimensions, setDimensions] = useState(window.innerWidth);
   const [toggle, setToggle] = useState(true);
@@ -34,16 +20,16 @@ function App() {
 
   useEffect(() => {
     // eslint-disable-next-line
-    const debouncedHandleResize = debounce(function handleResize() {
+    function handleResize() {
       setDimensions(window.innerWidth);
-    }, 1000);
+    }
 
     if (dimensions <= 1200) {
       setMobile(true);
     }
 
-    window.addEventListener('resize', debouncedHandleResize);
-    return () => (window.removeEventListener('resize', debouncedHandleResize));
+    window.addEventListener('resize', handleResize);
+    return () => (window.removeEventListener('resize', handleResize));
   }, []); // empty dependency
 
   return (
