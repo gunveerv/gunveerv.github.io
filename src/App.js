@@ -11,7 +11,7 @@ import Projects from './components/Projects';
 // eslint-disable-next-line
 function debounce(fn, ms) {
   let timer;
-  return (_) => {
+  return () => {
     clearTimeout(timer);
     // eslint-disable-next-line
     timer = setTimeout((_) => {
@@ -43,7 +43,7 @@ function App() {
     }
 
     window.addEventListener('resize', debouncedHandleResize);
-    return (_) => (window.removeEventListener('resize', debouncedHandleResize));
+    return () => (window.removeEventListener('resize', debouncedHandleResize));
   }, []); // empty dependency
 
   return (
