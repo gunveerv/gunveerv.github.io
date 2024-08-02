@@ -29,6 +29,8 @@ body, html {
   --background-color: #f7f7f7;
   --text-primary: #141414;
   --text-secondary: #141414;
+  --color-pill: #242526;
+  --text-pill: #efefef;
   transition: background-color 0.25s linear, color 0.25s linear;
 }
 
@@ -37,6 +39,8 @@ body, html {
   --text-primary: #F5F5F5;
   --text-secondary: #F5F5F5;
   --text-tertiary: #61dafb;
+  --color-pill: #efefef;
+  --text-pill: #242526;
   transition: background-color 0.25s ease, color 0.25s ease;
 }
 
@@ -132,5 +136,19 @@ body, html {
 .center-box {
   justify-content: center;
   align-items: center;
+}
+
+.padding-grid {
+  padding-top: 15px;
+}
+
+.chip {
+  background-color: var(--color-pill) !important;
+  color: var(--text-pill) !important;
+  opacity: 75%;
+}
+
+.chip:hover{
+  opacity: 95%;
 }
 
