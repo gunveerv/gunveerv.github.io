@@ -67,6 +67,7 @@ function Intro({ handleSetToggle, toggle }) {
             spacing={2}
             alignItems="center"
             justifyContent="left"
+            className="link"
           >
             <Grid item xs={0}>
               <img src="github.png" alt="Click to see my Github" className="logo" />
@@ -84,6 +85,7 @@ function Intro({ handleSetToggle, toggle }) {
             spacing={2}
             alignItems="center"
             justifyContent="left"
+            className="link"
           >
             <Grid item xs={0}>
               <img src="linkedin.png" alt="Click to see my Linkedin" className="logo" />

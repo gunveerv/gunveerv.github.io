@@ -76,7 +76,7 @@ body, html {
 
 .MuiTypography-h2 {
   font-size: 25px !important;
-  text-align: left;
+  text-align: left !important;
   padding-top: 12px;
   color: var(--text-secondary);
 }
@@ -114,6 +114,10 @@ body, html {
   /* display: block; */
 }
 
+.link:hover {
+  opacity: 75%;
+}
+
 .margin-top {
   margin-top: 50px;
 }
@@ -145,10 +149,10 @@ body, html {
 .chip {
   background-color: var(--color-pill) !important;
   color: var(--text-pill) !important;
-  opacity: 75%;
+  opacity: 95%;
 }
 
 .chip:hover{
-  opacity: 95%;
+  opacity: 75%;
 }
 
