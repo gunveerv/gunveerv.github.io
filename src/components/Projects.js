@@ -14,7 +14,7 @@ function Projects() {
         alignItems="left"
         justifyContent="center"
       >
-        <Grid item xs={0}>
+        <Grid item xs={0} className="grid">
           <Link href="https://github.com/gunveerv/budget.app" underline="none">
             <Typography variant="h2">budget.app</Typography>
             <Typography variant="h4">Track expenses, visualize budgets anytime, anywhere</Typography>
@@ -32,7 +32,7 @@ function Projects() {
           </Link>
         </Grid>
 
-        <Grid item xs={0}>
+        <Grid item xs={0} className="grid">
           <Link href="https://github.com/gunveerv/8080-Emulation" underline="none">
             <Typography variant="h2">8080 CPU</Typography>
             <Typography variant="h4">A simulator for the intel 8080</Typography>
@@ -43,7 +43,7 @@ function Projects() {
           </Link>
         </Grid>
 
-        <Grid item xs={0}>
+        <Grid item xs={0} className="grid">
           <Link href="https://github.com/gunveerv/WAI-October_Event" underline="none">
             <Typography variant="h2">CycleGAN Image Translator</Typography>
             <Typography variant="h4">Transforms images using the CycleGAN algoritm</Typography>
@@ -57,7 +57,7 @@ function Projects() {
           </Link>
         </Grid>
 
-        <Grid item xs={0}>
+        <Grid item xs={0} className="grid">
           <Link href="https://github.com/gunveerv/asteroids-2.0" underline="none">
             <Typography variant="h2">asteroids 2.0</Typography>
             <Typography variant="h4">Replay Asteroids with a modern twist</Typography>

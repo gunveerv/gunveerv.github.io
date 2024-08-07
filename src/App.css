@@ -156,3 +156,6 @@ body, html {
   opacity: 75%;
 }
 
+.grid:hover{
+  opacity: 85%;
+}
