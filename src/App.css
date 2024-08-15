@@ -159,3 +159,14 @@ body, html {
 .grid:hover{
   opacity: 85%;
 }
+
+.link {
+  color: var(--text-primary);
+  padding-top: 20px;
+  margin-left: 5px;
+}
+
+.link-grid { 
+  display: flex;
+  justify-content: flex-start;
+}

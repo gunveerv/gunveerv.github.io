@@ -1,6 +1,7 @@
 import { Link, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import '../App.css';
 
 function Projects() {
@@ -16,7 +17,10 @@ function Projects() {
       >
         <Grid item xs={0} className="grid">
           <Link href="https://github.com/gunveerv/budget.app" underline="none">
-            <Typography variant="h2">budget.app</Typography>
+            <Box className="link-grid">
+              <Typography variant="h2">budget.app </Typography>
+              <OpenInNewIcon className="link" fontSize="small" />
+            </Box>
             <Typography variant="h4">Track expenses, visualize budgets anytime, anywhere</Typography>
             <Typography variant="h5">
               Built with
@@ -34,7 +38,10 @@ function Projects() {
 
         <Grid item xs={0} className="grid">
           <Link href="https://github.com/gunveerv/8080-Emulation" underline="none">
-            <Typography variant="h2">8080 CPU</Typography>
+            <Box className="link-grid">
+              <Typography variant="h2">8080 CPU</Typography>
+              <OpenInNewIcon className="link" fontSize="small" />
+            </Box>
             <Typography variant="h4">A simulator for the intel 8080</Typography>
             <Typography variant="h5">
               Built in
@@ -45,7 +52,10 @@ function Projects() {
 
         <Grid item xs={0} className="grid">
           <Link href="https://github.com/gunveerv/WAI-October_Event" underline="none">
-            <Typography variant="h2">CycleGAN Image Translator</Typography>
+            <Box className="link-grid">
+              <Typography variant="h2">CycleGAN Image Translator</Typography>
+              <OpenInNewIcon className="link" fontSize="small" />
+            </Box>
             <Typography variant="h4">Transforms images using the CycleGAN algoritm</Typography>
             <Typography variant="h5">
               Built with
@@ -59,7 +69,10 @@ function Projects() {
 
         <Grid item xs={0} className="grid">
           <Link href="https://github.com/gunveerv/asteroids-2.0" underline="none">
-            <Typography variant="h2">asteroids 2.0</Typography>
+            <Box className="link-grid">
+              <Typography variant="h2">asteroids 2.0</Typography>
+              <OpenInNewIcon className="link" fontSize="small" />
+            </Box>
             <Typography variant="h4">Replay Asteroids with a modern twist</Typography>
             <Typography variant="h5">
               Built in

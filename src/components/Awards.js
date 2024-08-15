@@ -5,7 +5,7 @@ function Awards() {
   return (
     <div>
       <Typography variant="h2" className="bold">AWARDS</Typography>
-      <Typography variant="h2">RBC Scholarhsip in Data Science '22</Typography>
+      <Typography variant="h2">RBC Scholarship in Data Science '22</Typography>
     </div>
   );
 }
