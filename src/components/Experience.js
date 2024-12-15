@@ -41,7 +41,7 @@ function Experience() {
             justifyContent="left"
             className="padding-grid"
           >
-            { ['Node.js', 'React', 'DynamoDB', 'AWS Lambda'].map((technology) => <Grid item xs={0}><Chip label={technology} className="text-align chip" size="small" /></Grid>) }
+            { ['Node.js', 'React', 'DynamoDB', 'AWS Lambda', 'Docker'].map((technology) => <Grid item xs={0}><Chip label={technology} className="text-align chip" size="small" /></Grid>) }
           </Grid>
         </Grid>
       </Grid>
