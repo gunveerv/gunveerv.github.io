@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router';
+import { HashRouter, Routes, Route } from 'react-router';
 import { useEffect, useState } from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
@@ -37,7 +37,7 @@ function App() {
   return (
     <div className={`App ${handleTheme()} ${handleMobile()}`}>
       <Grid>
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route
               index
@@ -109,7 +109,7 @@ function App() {
               )}
             />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </Grid>
     </div>
   );
