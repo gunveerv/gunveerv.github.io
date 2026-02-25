@@ -162,6 +162,10 @@ body, html {
 }
 
 .grid:hover{
+  /* opacity: 85%; */
+}
+
+.grid-hover:hover{
   opacity: 85%;
 }
 
