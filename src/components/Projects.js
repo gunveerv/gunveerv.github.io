@@ -56,7 +56,7 @@ function Projects() {
               <Typography variant="h2">CycleGAN Image Translator</Typography>
               <OpenInNewIcon className="link" fontSize="small" />
             </Box>
-            <Typography variant="h4">Transforms images using the CycleGAN algoritm</Typography>
+            <Typography variant="h4">Transforms images using the CycleGAN algorihtm</Typography>
             <Typography variant="h5">
               Built with
               <span style={{ fontWeight: 'bold' }}> PyTorch </span>
