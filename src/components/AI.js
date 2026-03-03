@@ -1,86 +1,337 @@
-import { Link, Typography } from '@mui/material';
-import Grid from '@mui/material/Grid';
+import { Typography, Link } from '@mui/material';
 import Box from '@mui/material/Box';
-import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import '../App.css';
+import lambdaImg from '../static/lambda.png';
+import wavModelBreakdown from '../static/wav_model_breakdown.png';
+import wavModelNN from '../static/wav_model_nn.png';
+import banffFake from '../static/banff - Gunveer Vilkhu_fake.png';
+import banffReal from '../static/banff - Gunveer Vilkhu_real.png';
 
 function AI() {
+  const sectionTitleSx = {
+    fontWeight: 700,
+    fontSize: '1.3rem',
+    marginBottom: 2,
+    marginTop: 3,
+    textTransform: 'uppercase',
+    letterSpacing: '0.05em',
+    color: 'white',
+    textAlign: 'left',
+  };
+
+  const jobTitleSx = {
+    fontWeight: 700,
+    marginBottom: 0.5,
+    fontSize: '1rem',
+    color: 'white',
+    textAlign: 'left',
+  };
+
+  const textSx = {
+    color: 'white',
+    marginBottom: 0.5,
+    textAlign: 'left',
+  };
+
   return (
     <Box>
-      <Typography variant="h1" className="bold">AI Portfolio</Typography>
-      <Grid
-        container
-        direction="column"
-        spacing={2}
-        alignItems="left"
-        justifyContent="center"
-      >
-        <Grid item xs={0} className="grid">
-          <Typography variant="h2">AI at Vertex</Typography>
-          <br />
-          <Typography variant="h4">MCP + O Series Proof of Concept</Typography>
-          <Typography variant="h5">Lead a team of interns to build a POC use case for an MCP Server with O Series.</Typography>
-          <Typography variant="h5">Presented to Internal Stakeholders. Using MCP, LLM, Python</Typography>
-          <Typography variant="h5">Currently on Vertex's GitHub</Typography>
-          <br />
-          <Typography variant="h4">AIFND Copilot</Typography>
-          <Typography variant="h5">Assisted with the implementation of Copilot.</Typography>
-          <Typography variant="h5">Created unit tests and a CSRF token endpoint. Using Python</Typography>
-          <br />
-          <Typography variant="h4">Smart Cat</Typography>
-          <Typography variant="h5">Assisted with the production release of Smart Cat.</Typography>
-          <Typography variant="h5">Created utils for the backend classifier engine, Prompt Engineering to  products.</Typography>
-          <Typography variant="h5">Testing classic ML Models to be used instead of LLM API calls (BERT, TF-IDF + SVM).</Typography>
-          <Typography variant="h5">Using Python</Typography>
-        </Grid>
+      <Box sx={{ marginBottom: 4 }}>
+        <Typography
+          variant="h1"
+          sx={{
+            fontWeight: 700,
+            fontSize: '2.5rem',
+            marginBottom: 0.5,
+            textAlign: 'left',
+          }}
+          className="bold"
+        >
+          Gunveer's AI Portfolio
+        </Typography>
+      </Box>
 
-        <Grid item xs={0} className="grid">
-          <Typography variant="h2">Undergraduate Thesis</Typography>
-          <Typography variant="h4">λ5780 Diffuse Interstellar Band (DIB)</Typography>
-          <Typography variant="h5">Using a Sum of Gaussians Fit, I created a model to capture the λ5780 DIB.</Typography>
-          <Typography variant="h5">Looked through other research papers related to DIB and implemented Signal-to-Noise boost.</Typography>
-          <Typography variant="h5">Using Python.</Typography>
-          <Typography variant="h5">April 2025</Typography>
-        </Grid>
+      {/* Experience Section */}
+      <Box sx={{ marginBottom: 3 }}>
+        <Typography variant="h2" sx={sectionTitleSx}>
+          Professional Experience
+        </Typography>
 
-        <Grid item xs={0} className="grid grid-hover">
-          <Link href="https://colab.research.google.com/drive/1PV6QhPwBeNd7P6jfIi8ofRgJ7kOrI1pl?usp=sharing" underline="none">
-            <Box className="link-grid">
-              <Typography variant="h2">Binary Classification of .wav Audio files</Typography>
-              <OpenInNewIcon className="link" fontSize="small" />
+        <Box sx={{ marginBottom: 2.5 }}>
+          <Typography variant="h4" sx={jobTitleSx}>
+            Software Engineer @ Vertex
+          </Typography>
+          <Typography
+            variant="body2"
+            sx={{
+              color: 'white',
+              marginBottom: 0.8,
+              textAlign: 'left',
+            }}
+          >
+            MCP + O Series proof-of-concept (see Vertex's GitHub)
+          </Typography>
+          <Typography
+            variant="body2"
+            sx={{
+              color: 'white',
+              marginBottom: 0.8,
+              textAlign: 'left',
+            }}
+          >
+            AIFND Copilot Chatbot (in Production)
+          </Typography>
+          <Typography
+            variant="body2"
+            sx={{
+              color: 'white',
+              textAlign: 'left',
+            }}
+          >
+            Smart Cat Engine (in Production)
+          </Typography>
+        </Box>
+      </Box>
+
+      {/* Projects Section */}
+      <Box sx={{ marginBottom: 3 }}>
+        <Typography variant="h2" sx={sectionTitleSx}>
+          Projects
+        </Typography>
+
+        <Box sx={{ marginBottom: 2.5 }}>
+          <Typography variant="h4" sx={jobTitleSx}>
+            MCP + O Series
+          </Typography>
+          <Typography variant="h5" sx={textSx}>
+            Python, Azure OpenAI, Docker
+          </Typography>
+          <Typography
+            variant="body2"
+            sx={{
+              color: 'white',
+              marginBottom: 0.8,
+              textAlign: 'left',
+            }}
+          >
+            Posted on Vertex's Github, this project is a proof of concept for a
+            chatbot that can answer questions about the MCP and O Series products.
+            It uses Azure OpenAI to generate responses and Docker for deployment.
+          </Typography>
+        </Box>
+
+        <Box sx={{ marginBottom: 2.5 }}>
+          <Typography variant="h4" sx={jobTitleSx}>
+            Retail Product Classifier
+          </Typography>
+          <Typography variant="h5" sx={textSx}>
+            Python, PyTorch, Transformers
+          </Typography>
+          <Typography
+            variant="body2"
+            sx={{
+              color: 'white',
+              marginBottom: 0.8,
+              textAlign: 'left',
+            }}
+          >
+            A demo of cutting-edge ML models; this project guided Smart Cat to an improved model.
+            Hosted on Vertex's GitHub.
+          </Typography>
+        </Box>
+
+        <Box sx={{ marginBottom: 2.5 }}>
+          <Typography variant="h4" sx={jobTitleSx}>
+            Undergraduate Thesis – λ5780 Diffuse Interstellar Band (DIB)
+          </Typography>
+          <Typography variant="h5" sx={textSx}>
+            Python, PyTorch, Matplotlib
+          </Typography>
+          <Typography
+            variant="body2"
+            sx={{
+              color: 'white',
+              textAlign: 'left',
+              marginBottom: 1.5,
+            }}
+          >
+            A sum-of-Gaussians model was trained to fit the λ5780 Diffuse Interstellar
+            Band for distant single-cloud stars. This produced a coadded signal shown
+            below (in red).
+          </Typography>
+          <Box sx={{ marginBottom: 1.5 }}>
+            <img
+              src={lambdaImg}
+              alt="Wavelength vs Flux plot"
+              className="portfolio-img"
+              style={{ maxWidth: '100%', height: 'auto', borderRadius: '4px' }}
+            />
+          </Box>
+        </Box>
+
+        <Box sx={{ marginBottom: 2.5 }}>
+          <Typography variant="h4" sx={jobTitleSx}>
+            Binary Classification of .wav Files
+          </Typography>
+          <Typography variant="h5" sx={textSx}>
+            Python, Sci-Kit Learn, TensorFlow, Google Colab
+          </Typography>
+          <Typography
+            variant="body2"
+            sx={{
+              color: 'white',
+              textAlign: 'left',
+              marginBottom: 1.5,
+            }}
+          >
+            Breakdown of minor/major chords in .wav files. A neural‑network model
+            yielded one of the best fits to the chroma data; see the breakdown below.
+          </Typography>
+          <Box
+            sx={{
+              display: 'flex',
+              gap: 1.5,
+              marginBottom: 1.5,
+              flexWrap: 'wrap',
+            }}
+          >
+            <Box
+              sx={{
+                flex: '1 1 45%',
+                minWidth: '250px',
+              }}
+            >
+              <img
+                src={wavModelNN}
+                alt="ROC Curve for Neural Network Model"
+                className="portfolio-img"
+                style={{
+                  maxWidth: '100%',
+                  height: 'auto',
+                  borderRadius: '4px',
+                }}
+              />
             </Box>
-            <Typography variant="h4">Researched the difference of various ML Models in the application of Binary Classification for .wav files</Typography>
-            <Typography variant="h5">Using Python</Typography>
-            <Typography variant="h5">April 2025</Typography>
-          </Link>
-        </Grid>
-
-        <Grid item xs={0} className="grid grid-hover">
-          <Link href="https://github.com/gunveerv/WAI-October_Event" underline="none">
-            <Box className="link-grid">
-              <Typography variant="h2">CycleGAN Image Translator</Typography>
-              <OpenInNewIcon className="link" fontSize="small" />
+            <Box
+              sx={{
+                flex: '1 1 45%',
+                minWidth: '250px',
+              }}
+            >
+              <img
+                src={wavModelBreakdown}
+                alt="Chroma Feature Averages"
+                className="portfolio-img"
+                style={{
+                  maxWidth: '100%',
+                  height: 'auto',
+                  borderRadius: '4px',
+                }}
+              />
             </Box>
-            <Typography variant="h4">Transforms images using the CycleGAN algorithm, using its research paper</Typography>
-            <Typography variant="h5">
-              Built with PyTorch on Google Colab, for Western AI
-            </Typography>
-            <Typography variant="h5">Oct 2022</Typography>
-          </Link>
-        </Grid>
+          </Box>
+        </Box>
 
-        <Grid item xs={0} className="grid grid-hover">
-          <Typography variant="h2">Western AI (Undergraduate club)</Typography>
-          <Typography variant="h4">Led educational workshops on ML Topics (Regression, Classification, Neural Networks)</Typography>
-          <Link href="https://docs.google.com/presentation/d/1Lo8Yb6zZd5M-7tOMXtsrPBif_woW6gIJ/edit?usp=sharing&ouid=107240994645307584538&rtpof=true&sd=true" underline="none">
-            <Box className="link-grid">
-              <Typography variant="h5">Created examples for these work shops for students (see link for NN PowerPoint)</Typography>
-              <OpenInNewIcon className="link" fontSize="small" />
+        <Box sx={{ marginBottom: 2.5 }}>
+          <Typography variant="h4" sx={jobTitleSx}>
+            CycleGAN Image Translator
+          </Typography>
+          <Typography variant="h5" sx={textSx}>
+            Python, PyTorch, Google Colab
+          </Typography>
+          <Typography
+            variant="body2"
+            sx={{
+              color: 'white',
+              marginBottom: 1.5,
+              textAlign: 'left',
+            }}
+          >
+            A transformer that applies different painting styles to photos. See
+            my personal submission below, where I translated a photo of Banff
+            into a painting‑style image. Many other students submitted their
+            photos, which we showcased
+            {' '}
+            <Link
+              href="https://drive.google.com/drive/folders/1OuUnDSkICZeX1Vq7bqT1zkT5C8JnFEjO?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{
+                color: 'white',
+                textDecoration: 'underline',
+                '&:hover': {
+                  opacity: 0.8,
+                },
+              }}
+            >
+              here
+            </Link>
+            .
+          </Typography>
+          <Box
+            sx={{
+              display: 'flex',
+              gap: 1.5,
+              marginBottom: 1.5,
+              flexWrap: 'wrap',
+            }}
+          >
+            <Box
+              sx={{
+                flex: '1 1 45%',
+                minWidth: '250px',
+              }}
+            >
+              <img
+                src={banffReal}
+                alt="Original Banff landscape"
+                className="portfolio-img"
+                style={{
+                  maxWidth: '100%',
+                  height: 'auto',
+                  borderRadius: '4px',
+                  marginBottom: '8px',
+                }}
+              />
+              <Typography
+                variant="body2"
+                sx={{
+                  color: 'white',
+                  fontSize: '0.85rem',
+                }}
+              >
+                Original
+              </Typography>
             </Box>
-          </Link>
-        </Grid>
-
-      </Grid>
+            <Box
+              sx={{
+                flex: '1 1 45%',
+                minWidth: '250px',
+              }}
+            >
+              <img
+                src={banffFake}
+                alt="CycleGAN translated landscape"
+                className="portfolio-img"
+                style={{
+                  maxWidth: '100%',
+                  height: 'auto',
+                  borderRadius: '4px',
+                  marginBottom: '8px',
+                }}
+              />
+              <Typography
+                variant="body2"
+                sx={{
+                  color: 'white',
+                  fontSize: '0.85rem',
+                }}
+              >
+                Translated
+              </Typography>
+            </Box>
+          </Box>
+        </Box>
+      </Box>
     </Box>
   );
 }

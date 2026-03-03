@@ -53,6 +53,10 @@ body, html {
   filter: invert(100%) sepia(27%) saturate(277%) hue-rotate(224deg) brightness(114%) contrast(92%);
 }
 
+.portfolio-img {
+  filter: none !important;
+}
+
 .padding-space {
   padding-left: 75px;
   padding-right: 50px;
