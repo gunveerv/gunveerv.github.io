@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.70d8e5d4.css",
+    "main.js": "/static/js/main.49487c69.js",
+    "static/js/787.ddfc475e.chunk.js": "/static/js/787.ddfc475e.chunk.js",
+    "static/media/banff - Gunveer Vilkhu_fake.png": "/static/media/banff - Gunveer Vilkhu_fake.13dc83fe23b46a8b326c.png",
+    "static/media/banff - Gunveer Vilkhu_real.png": "/static/media/banff - Gunveer Vilkhu_real.f3ca4be8f80a97607b8c.png",
+    "static/media/wav_model_breakdown.png": "/static/media/wav_model_breakdown.71b229d9bee406883e7b.png",
+    "static/media/lambda.png": "/static/media/lambda.5862e11f6a3f1d76005b.png",
+    "static/media/archivo-all-400-normal.woff": "/static/media/archivo-all-400-normal.5f45912fa2c54b75de78.woff",
+    "static/media/wav_model_nn.png": "/static/media/wav_model_nn.f8fa2e2d53b5acc7e4e7.png",
+    "static/media/archivo-latin-400-normal.woff2": "/static/media/archivo-latin-400-normal.35a56b960642fd230a57.woff2",
+    "static/media/archivo-latin-ext-400-normal.woff2": "/static/media/archivo-latin-ext-400-normal.8f67c7c04904be481498.woff2",
+    "static/media/archivo-vietnamese-400-normal.woff2": "/static/media/archivo-vietnamese-400-normal.bebd105e5c1a9cddb2c0.woff2",
+    "index.html": "/index.html",
+    "main.70d8e5d4.css.map": "/static/css/main.70d8e5d4.css.map",
+    "main.49487c69.js.map": "/static/js/main.49487c69.js.map",
+    "787.ddfc475e.chunk.js.map": "/static/js/787.ddfc475e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.70d8e5d4.css",
+    "static/js/main.49487c69.js"
+  ]
+}
